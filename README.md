@@ -55,11 +55,15 @@ PKI Architecture
 
 Verify certificate chain:
 
+```
 openssl verify -CAfile chain.pem server-cert.pem
+```
 
 View certificate details:
 
+```
 openssl x509 -in server-cert.pem -text -noout
+```
 
 ---
 
