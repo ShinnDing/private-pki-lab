@@ -96,3 +96,8 @@ private-pki-lab/
 
 Stephanie Shinn  
 IAM Consultant | PKI | Identity Security | Quantum-Safe Cryptography
+
+---
+
+## License
+MIT License
