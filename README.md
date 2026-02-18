@@ -12,10 +12,11 @@ This lab demonstrates hands-on understanding of X.509 certificates, trust chains
 
 PKI hierarchy implemented:
 
-Root CA (offline)  
-└── Intermediate CA  
-&nbsp;&nbsp;&nbsp;&nbsp;├── Server Certificates  
-&nbsp;&nbsp;&nbsp;&nbsp;└── Client Certificates  
+```text
+Root CA (offline)
+└── Intermediate CA
+    ├── Server Certificates
+    └── Client Certificates
 
 ---
 
@@ -75,6 +76,7 @@ This project demonstrates understanding of:
 
 ## Repository Structure
 
+```text
 private-pki-lab/
 ├── root-ca/
 ├── intermediate-ca/
