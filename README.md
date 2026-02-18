@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project implements a complete private Public Key Infrastructure (PKI) using OpenSSL. It demonstrates certificate authority hierarchy, certificate issuance, and certificate revocation, simulating enterprise internal PKI environments.
+This project implements a complete private Public Key Infrastructure (PKI) using OpenSSL. It demonstrates certificate authority hierarchy, certificate issuance, validation, and revocation, simulating enterprise internal PKI environments.
 
-This lab was created to demonstrate hands-on understanding of X.509 certificates, trust chains, and TLS authentication.
+This lab demonstrates hands-on understanding of X.509 certificates, trust chains, and TLS authentication.
 
 ---
 
@@ -12,10 +12,10 @@ This lab was created to demonstrate hands-on understanding of X.509 certificates
 
 PKI hierarchy implemented:
 
-Root CA (offline)
-   └── Intermediate CA
-         ├── Server Certificates
-         └── Client Certificates
+Root CA (offline)  
+└── Intermediate CA  
+&nbsp;&nbsp;&nbsp;&nbsp;├── Server Certificates  
+&nbsp;&nbsp;&nbsp;&nbsp;└── Client Certificates  
 
 ---
 
@@ -53,5 +53,38 @@ PKI Architecture
 
 Verify certificate chain:
 
-```bash
 openssl verify -CAfile chain.pem server-cert.pem
+
+View certificate details:
+
+openssl x509 -in server-cert.pem -text -noout
+
+---
+
+## Learning Objectives
+
+This project demonstrates understanding of:
+
+• Certificate Authority hierarchy  
+• Certificate signing process  
+• Trust chains  
+• Certificate validation  
+• Revocation mechanisms  
+
+---
+
+## Repository Structure
+
+private-pki-lab/
+├── root-ca/
+├── intermediate-ca/
+├── certs/
+├── crl/
+└── README.md
+
+---
+
+## Author
+
+Stephanie Shinn  
+IAM Consultant | PKI | Identity Security | Quantum-Safe Cryptography
