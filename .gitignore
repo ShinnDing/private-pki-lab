@@ -1,0 +1,14 @@
+# Private keys and sensitive PKI material
+*.key
+*.key.pem
+**/*.key
+**/*.key.pem
+
+# Serial / index / misc CA state
+*.srl
+*.old
+*.bak
+
+# Optional: keep CSRs out of the repo too (uncomment if you want)
+# *.csr
+# *.csr.pem
