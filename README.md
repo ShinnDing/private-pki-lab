@@ -17,6 +17,7 @@ Root CA (offline)
 └── Intermediate CA
     ├── Server Certificates
     └── Client Certificates
+```
 
 ---
 
@@ -83,6 +84,7 @@ private-pki-lab/
 ├── certs/
 ├── crl/
 └── README.md
+```
 
 ---
 
